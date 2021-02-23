@@ -1,11 +1,13 @@
 {
     "devDependencies": {
+        "@babel/core": "^7.12.17",
+        "@babel/preset-env": "^7.12.17",
         "@symfony/stimulus-bridge": "^2.0.0",
         "@symfony/webpack-encore": "^1.0.0",
+        "babel-loader": "^8.2.2",
         "core-js": "^3.0.0",
         "regenerator-runtime": "^0.13.2",
-        "stimulus": "^2.0.0",
-        "webpack-notifier": "^1.6.0"
+        "stimulus": "^2.0.0"
     },
     "license": "UNLICENSED",
     "private": true,
@@ -16,7 +18,17 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@popperjs/core": "^2.8.2",
+        "autoprefixer": "^10.2.4",
+        "axios": "^0.21.1",
+        "babel-install": "^2.1.0",
+        "bootstrap": "^4.6.0",
+        "css-loader": "^5.0.2",
         "jquery": "^3.5.1",
-        "jsdom": "^16.4.0"
+        "jsdom": "^16.4.0",
+        "node-sass": "^5.0.0",
+        "postcss-loader": "^5.0.0",
+        "sass-loader": "^11.0.1",
+        "style-loader": "^2.0.0"
     }
 }
