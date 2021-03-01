@@ -5,6 +5,7 @@ namespace App\Controller;
 use DateTime;
 use App\Entity\Absence;
 use Symfony\Component\BrowserKit\Request;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -22,9 +23,7 @@ class StudentController extends AbstractController
         $absence = new Absence();
 
         $form = $this->createFormBuilder($absence)
-            ->add('date_start', DateType::class, [
-                'widget' => 'single_text',
-                'html5' => false,
+            ->add('date_start', TextType::class, [
                 'attr' => ['class' => 'js-datepicker'],
             ])
             ->add('date_end', DateTimeType::class)

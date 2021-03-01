@@ -7,14 +7,13 @@
 		</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-		{% block stylesheets %}
-			{{ encore_entry_link_tags('app') }}
-		{% endblock %}
+		{{ encore_entry_link_tags('app') }}
 		{{ encore_entry_script_tags('app') }}
-		{% block javascripts %}{% endblock %}
+		{% block stylesheets %}{% endblock %}
 	</head>
 	<body>
-		{% include 'Navbar/index.html.twig' %}
+		{% include 'includes/navBar.html.twig' %}
 		{% block body %}{% endblock %}
+		{% block javascripts %}{% endblock %}
 	</body>
 </html>
