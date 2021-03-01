@@ -33,7 +33,7 @@ class AbsController extends AbstractController
      */
     public function pdfTest(PdfService $fpsf): Response
     {
-        $fpdf = $fpsf->AbsenceAuth();
+        $fpdf = $fpsf->createActivity();
 
         return new Response($fpdf->Output('I', 'gene.pdf'), 200, array(
             'Content-Type' => 'application/pdf'));
