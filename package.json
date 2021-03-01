@@ -24,6 +24,7 @@
         "axios": "^0.21.1",
         "babel-install": "^2.1.0",
         "bootstrap": "^4.6.0",
+        "bootstrap-datepicker": "^1.9.0",
         "css-loader": "^5.0.2",
         "jquery": "^3.5.1",
         "jsdom": "^16.4.0",

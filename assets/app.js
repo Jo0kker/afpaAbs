@@ -9,6 +9,8 @@ global.$ = global.jQuery = $ = require('jquery');
 import '@popperjs/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
+import 'bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css';
 import axios from "axios";
 
 // any CSS you import will output into a single css file (app.css in this case)

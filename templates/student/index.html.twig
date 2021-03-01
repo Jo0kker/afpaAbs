@@ -1,11 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Student absence{% endblock %}
+{% block title %}Student absence
+{% endblock %}
 
 {% block body %}
-    <div class="container mt-5">
-        <div class="shadow p-3 mb-5 bg-white rounded">
-            <h1 class="text-shadow">Demande d'absence <span>ICON</span></h1>
-        </div>
-    </div>
+	<div class="container mt-5">
+		<div class="shadow p-3 mb-5 bg-white rounded">
+			<h1 class="text-shadow">Demande d'absence
+				<span>ICON</span>
+			</h1>
+
+			{{ form_start(formAbsence) }}
+
+			<div class="form-group">
+				<label for="">Date de début</label>
+				{{ form_widget(formAbsence.date_start) }}
+			</div>
+
+			<div class="form-group">
+				<label for="">Date de fin</label>
+				{{ form_widget(formAbsence.date_end) }}
+			</div>
+
+			<div class="form-group">
+				<label for="">Raison</label>
+				{{ form_widget(formAbsence.reason) }}
+			</div>
+			{{ form_end(formAbsence) }}
+
+			<button type="submit" class="btn btn-success">Confirmer</button>
+		</div>
+	</div>
+{% endblock %}
+
+{%  block javascript %}
+	<script>
+		$(document).ready(function () {
+$('.js-datepicker').datepicker({format: 'yyyy-mm-dd'});
+});
+	</script>
 {% endblock %}
